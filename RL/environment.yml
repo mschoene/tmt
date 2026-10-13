@@ -1,0 +1,31 @@
+name: jax-rl
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - pip:
+    - absl-py>=0.12.0
+    - gymnasium[mujoco]>=0.29
+    - minari
+    - gdown
+    - tqdm
+    # JAX: install the CPU build below, or follow https://docs.jax.dev/en/latest/installation.html
+    # for a CUDA/GPU build matching your driver version.
+    - jax
+    - jaxlib
+    - flax
+    - equinox
+    - optax
+    - scikit-learn
+    - emlp @ git+https://github.com/mfinzi/equivariant-MLP
+    - objax
+    - torch
+    - pandas
+    - matplotlib
+    - tensorboardX
+    - imageio
+    - imageio-ffmpeg
+    - wandb
